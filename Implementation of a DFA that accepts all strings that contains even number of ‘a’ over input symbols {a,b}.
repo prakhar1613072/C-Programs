@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int i=0,a=0;
+ char str[10];
+ scanf("%s",str);
+ while(i<strlen(str))
+ {
+  if((str[i]=='a')&&(a==1))
+   {
+    a=0;
+   }
+  else if((str[i]=='a')&&(a==0))
+   {
+   a=1;
+   }
+   i++;
+ }
+ if(a==0)
+  printf("String accepted");
+ else
+  printf("String not accepted");  
+}    
